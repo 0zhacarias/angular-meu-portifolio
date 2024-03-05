@@ -1,1 +1,61 @@
-<p>menu works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio Website</title>
+</head>
+
+<body>
+  <div class="container">
+    <span id="element"></span>
+    <nav>
+      <div class="logo">Port<b>.</b></div>
+      <ul class="navItens">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Competências</a></li>
+        <li><a href="#">Git</a></li>
+      </ul>
+      <div class="links">
+        <a href="#"><i class="fab fab-linkedin"></i></a>
+        <a href="#"><i class="fab fab-linkedin"></i></a>
+        <a href="#"><i class="fab fab-linkedin"></i></a>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="cols cols0">
+        <span class="topline">Hello</span>
+        <h1>ZAGE MILONGA <span id="multiText"></span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit fugiat ipsum illum? Totam officiis
+          eveniet cumque reiciendis dolore amet debitis repellendus quisquam eum dolores. Repellendus totam odit
+          dignissimos quia?</p>
+        <div class="btns">
+          <button>dowload CV</button>
+          <button>encontra-me</button>
+
+        </div>
+      </div>
+      <div class="cols cols1">
+        <div class="imgbox">
+          <img src="/assets/pincel.png" alt="" id="pincel">
+          <img src="/assets/zage.png" id="person"  >
+        </div>
+            </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var typed = new Typed('#multiText', {
+      strings: ['Hello', 'World'],
+      typeSpeed: 50,
+      loop: true
+    });
+  });
+</script>
