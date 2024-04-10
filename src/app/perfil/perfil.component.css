@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+overflow: hidden;
+
+}
+.wrapper::before{
+position: absolute;
+content: " ";
+height: 550px;
+width: 550px;
+border-radius: 50%;
+left: -31%;
+top: 10%;
+background: linear-gradient(45deg,#7f00ff,pink);
+animation: object1 6s linear infinite;
+
+}
+.wrapper::after{
+position: absolute;
+content: " ";
+height: 100px;
+width: 100px;
+border-radius: 50%;
+left: 30%;
+top: 5%;
+background: linear-gradient(45deg,#7f00ff,pink);
+animation: object2 6s linear infinite;
+
+}
+.cols{
+  width: 50%;
+}
+.cols0{
+  z-index:0 ;
+}
+
+.topline{
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3e565f;
+bottom:50px;
+}
+.topline::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 45px;
+  bottom:   0px;
+  background-color: #7f00ff;
+}
+h2{
+  display: block;
+  font-size: 4em;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #3e565f;
+  bottom: 100px;
+
+}
+.multiText{
+  color: #7f00ff;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 900;
+  top: 200px;
+
+}
+.btns{
+  width:100%;
+  position: relative;
+  left: 150px;
+}
+button{
+
+outline: none;
+border: none;
+cursor: pointer;
+font-size: 25px;
+font-weight: 400;
+color: #fff;
+background-color: #3e565f;
+padding: 8px 14px;
+margin: 40px 5px;
+letter-spacing: 2px;
+text-transform: capitalize;
+box-shadow: 0 15px 10px rgba(0, 0, 0, .4);
+
+}
+button:hover{
+  background-color: #7f00ff;
+}
+
+ .imgbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 60%;
+}
+.imgbox img{
+position: relative;
+/*  height: 100vh; */
+width: calc(130% -80px);
+top: 0px;
+right: 50px;
+/* transform: rotateY(180deg); */
+animation: animateUser 4s linear infinite;
+}
+
+.imgbox #pincel{
+  position:absolute;
+   height: 500px !important;
+  width: 500px !important;
+  top: -150%;
+  left: 10%;
+  transform:translate(-50%,50%) rotate(-30deg);
+  filter: saturate(200%);
+  animation: pincelUser 6s linear infinite;
+}
+.imgbox #person{
+  filter: saturate(200%);
+  left: -10%;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+
+footer{
+  background-color: #f3f5f7;
+  height: 100px;
+}
+@keyframes animateUsers {
+  50%{
+    right: 30px;
+    top: -90px;
+
+  }
+
+}
+
+@keyframes pincelUser {
+ 50%{
+    right: 51%;
+    top: -120%;
+    width: 155%;
+
+  }
+}
+@keyframes object1 {
+ 50%{
+  left: -25%;
+  top: 20%;
+
+  }
+}
+@keyframes object2 {
+ 50%{
+  left: 20%;
+  top: 5%;
+
+  }
+}

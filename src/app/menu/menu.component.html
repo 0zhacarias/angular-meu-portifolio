@@ -9,14 +9,14 @@
 
 <body>
   <div class="container">
-    <span id="element"></span>
-    <nav>
+    <!-- <span id="element"></span> -->
+    <!--    <nav>
       <div class="logo">Port<b>.</b></div>
       <ul class="navItens">
         <li><a href="#">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#competencias">Competências</a></li>
-        <li><a href="#Tecnologia">Tecnologia</a></li>
+        <li><a href="#Projectos">Tecnologia</a></li>
         <li><a href="#">Git</a></li>
       </ul>
       <div class="links">
@@ -34,62 +34,40 @@
             </path>
           </svg></a>
         <a href="#"><i class="fab fab-linkedin"></i></a>
-        <!--         <fa-icon [icon]="['fas', 'coffee']"></fa-icon> -->
       </div>
-    </nav>
-    <div class="wrapper">
+    </nav> -->
+    <header class="header">
+      <a href="#" class="logo">Port.</a>
+      <nav class="navbar">
+        <a href="#Sobre" class="active">Home</a>
+        <a href="#Formacoes" style="--i:1;">Formação</a>
+        <a href="#Competencias" style="--i:3;">Skills</a>
+        <a href="#Projectos" style="--i:2;">Projectos</a>
+        <a href="#Experiencia" style="--i:4;">Experiência</a>
+        <a class="contacto" style="--i:5;" (click)="openDialog()">Contactos</a>
+      </nav>
+    </header>
 
-      <div class="cols cols0">
-        <span class="topline">Hello</span>
-        <h1>ZAGE MILONGA</h1>
-        <span class="multiText">Software Engenner</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit fugiat ipsum illum? Totam officiis
-          eveniet cumque reiciendis dolore amet debitis repellendus quisquam eum dolores. Repellendus totam odit
-          dignissimos quia?</p>
-        <div class="btns">
-          <button>dowload CV</button>
-          <button>encontra-me</button>
-
-        </div>
-      </div>
-      <div class="cols cols1">
-        <div class="imgbox">
-          <img src="/assets/pincel.png" alt="" id="pincel">
-          <img src="/assets/zage.png" id="person">
-        </div>
-      </div>
-    </div>
-    <section class="sessao2" id="competencias">
-      <h1>
-        <span>texto</span>
-      </h1>
-      <div class="container">
-
-          <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Content</p>
-          </div>
-
-      </div>
+    <section id="Sobre">
+      <!--  <app-perfil></app-perfil> -->
+      <app-perfil-black></app-perfil-black>
     </section>
-    <section class="sessao3" id="Tecnologia">
-      <div class="container2">
-        <div class="card" style="--clr:#fff">
-          <div class="box">
-            <div class="icon">
-              <div class="iconBox"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256"
-                style="fill:#FFFFFF;">
-                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M28.29102,6l-1.88477,5.75977c-2.85104,0.78633 -5.45841,2.15582 -7.68555,3.97656l1.33789,-2.9082l-2.35156,-1.2793c-0.779,-0.423 -1.74314,-0.28325 -2.36914,0.34375l-4.3457,4.34375l2.74609,5.41797c-1.40516,2.47478 -2.33305,5.25579 -2.63086,8.22656l-1.10742,-2.99414l-2.56641,0.75977c-0.85,0.251 -1.43359,1.03197 -1.43359,1.91797v6.14453l5.75977,1.88477c0.78633,2.85104 2.15582,5.45841 3.97656,7.68555l-2.9082,-1.33789l-1.2793,2.35156c-0.423,0.779 -0.28325,1.74314 0.34375,2.36914l4.34375,4.3457l5.41797,-2.74609c2.47478,1.40516 5.25579,2.33305 8.22656,2.63086l-2.99414,1.10742l0.75977,2.56641c0.251,0.85 1.03197,1.43359 1.91797,1.43359h6.14453l1.88477,-5.75977c2.85104,-0.78633 5.45841,-2.15582 7.68555,-3.97656l-1.33789,2.9082l2.35156,1.2793c0.779,0.423 1.74314,0.28325 2.36914,-0.34375l4.3457,-4.34375l-2.74609,-5.41797c1.40516,-2.47478 2.33305,-5.25579 2.63086,-8.22656l1.10742,2.99414l2.56641,-0.75977c0.85,-0.251 1.43359,-1.03197 1.43359,-1.91797v-6.14453l-5.75977,-1.88477c-0.78633,-2.85104 -2.15582,-5.45841 -3.97656,-7.68555l2.9082,1.33789l1.2793,-2.35156c0.423,-0.779 0.28325,-1.74314 -0.34375,-2.36914l-4.34375,-4.3457l-5.41797,2.74609c-2.47478,-1.40516 -5.25579,-2.33305 -8.22656,-2.63086l2.99414,-1.10742l-0.75977,-2.56641c-0.251,-0.85 -1.03197,-1.43359 -1.91797,-1.43359zM32,16c8.837,0 16,7.163 16,16c0,8.836 -7.163,16 -16,16c-8.837,0 -16,-7.164 -16,-16c0,-8.837 7.163,-16 16,-16zM32,20c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM32,28c2.209,0 4,1.791 4,4c0,2.209 -1.791,4 -4,4c-2.209,0 -4,-1.791 -4,-4c0,-2.209 1.791,-4 4,-4z"></path></g></g>
-                </svg></div>
-            </div>
+    <section id="Formacoes">
 
-          <div class="content">
-            <h3>Texto</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam id dolore reiciendis? Blanditiis iure possimus qui totam, cum quam illo sint eveniet temporibus inventore velit vero veritatis est sed!</p>
-          </div>
-        </div>
-        </div>
-      </div>
+    </section>
+    <section class="sessao2" id="Competencias">
+
+      <app-competencias></app-competencias>
+    </section>
+    <section id="Projectos">
+      <app-projectos></app-projectos>
+    </section>
+    <section id="Experiencia">
+      <app-experiencia></app-experiencia>
+    </section>
+    <section id="Contactos">
+      <button mat-raised-button (click)="openDialog()">Vizualizar Contacto</button>
+    <!--   <app-contacto></app-contacto> -->
     </section>
     <footer></footer>
   </div>

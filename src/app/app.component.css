@@ -1,0 +1,18 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#Projectos{
+  background-color: #7f00ff;
+}
+section >h1{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 6em;
+  flex-direction: column;
+  color: #f3f5f7;
+  letter-spacing: 4px;
+  font-weight: 900;
+  bottom: 10px;
+}

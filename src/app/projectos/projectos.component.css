@@ -1,0 +1,94 @@
+h1{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 6em;
+  flex-direction: column;
+  color: #f3f5f7;
+  letter-spacing: 4px;
+  font-weight: 900;
+  opacity: 0;
+  animation: slideTop 1s ease   forwards ;
+
+}
+#Projectos{
+
+
+}
+.sessao3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80;
+
+}
+.container2 .primeiro{
+
+ animation: slidecard 2.3s ease forwards;
+ animation-timeline: view();
+ animation-range: entry;
+/* animation-delay: 2.1s; */
+}
+.container2 .ultimo{
+
+ animation: slidecardLeft 2.3s ease forwards;
+ animation-timeline: view();
+ animation-range: entry;
+/* animation-delay: 2.1s; */
+}
+.container2 .meio{
+
+ animation: slidecardTop 2.3s ease forwards;
+ animation-timeline: view();
+ scale: .8;
+  opacity: 0;
+ /* animation-delay: 2.1s; */
+ animation-range: entry 100px;
+}
+@keyframes slidecardTop {
+    to{scale: 1;opacity: 1;}
+
+}
+
+@keyframes slidecard {
+ /*   from {scale: .6;opacity: 0;}
+to{scale: 1;opacity: 1;} */
+  0%{
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slidecardLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideTop {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+}
